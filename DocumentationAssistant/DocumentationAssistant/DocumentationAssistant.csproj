@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
@@ -36,6 +36,16 @@
   <ItemGroup>
     <None Update="tools\*.ps1" CopyToOutputDirectory="Always" Pack="true" PackagePath="" />
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentationAssistant.Config\DocumentationAssistant.Config.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.Shell.15.0">
+      <HintPath>..\..\packages\Microsoft.VisualStudio.Shell.15.0.15.0.26228\lib\Microsoft.VisualStudio.Shell.15.0.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

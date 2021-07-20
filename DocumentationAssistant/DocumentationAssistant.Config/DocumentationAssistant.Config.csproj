@@ -55,9 +55,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ConfigurationPackage.cs" />
-    <Compile Include="OptionsPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

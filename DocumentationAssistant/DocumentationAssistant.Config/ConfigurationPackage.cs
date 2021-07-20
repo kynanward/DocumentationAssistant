@@ -35,8 +35,6 @@ namespace DocumentationAssistant.Config
 	[PackageRegistration(UseManagedResourcesOnly = true)]
 	[InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
 	[Guid(ConfigurationPackage.PackageGuidString)]
-	[ProvideService(typeof(SOptionsService))]
-	[ProvideOptionPage(typeof(OptionsPage), "Documentation Assistant", "General", 0, 0, true)]
 	[SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
 	public sealed class ConfigurationPackage : Package
 	{
@@ -55,44 +53,5 @@ namespace DocumentationAssistant.Config
 			// not sited yet inside Visual Studio environment. The place to do all the other
 			// initialization is the Initialize method.
 		}
-
-		#region Package Members
-
-		protected override void Initialize()
-		{
-			((IServiceContainer)this).AddService(typeof(SOptionsService), CreateService, true);
-		}
-
-		private object CreateService(IServiceContainer container, Type serviceType)
-		{
-			if (typeof(SOptionsService) == serviceType)
-				return new OptionsService(this);
-			return null;
-		}
-
-		#endregion
-	}
-
-	public class OptionsService : SOptionsService, IOptionsService
-	{
-		private Package serviceProvider;
-
-		public OptionsService(Package sp)
-		{
-			serviceProvider = sp;
-		}
-
-		bool IOptionsService.IsEnabledToPublicMembersOnly()
-		{
-			OptionsPage page = (OptionsPage)this.serviceProvider.GetDialogPage(typeof(OptionsPage));
-			return page.EnabledToPublishMembersOnly;
-		}
-	}
-	public interface SOptionsService
-	{
-	}
-	public interface IOptionsService
-	{
-		bool IsEnabledToPublicMembersOnly();
 	}
 }

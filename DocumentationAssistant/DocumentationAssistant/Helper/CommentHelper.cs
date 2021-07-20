@@ -45,7 +45,7 @@ namespace DocumentationAssistant.Helper
 			}
 			else
 			{
-				return $"Initializes a new instance of the <see cref=\"{name}\"/> class.";
+				return $"Initialises a new instance of the <see cref=\"{name}\"/> class.";
 			}
 		}
 

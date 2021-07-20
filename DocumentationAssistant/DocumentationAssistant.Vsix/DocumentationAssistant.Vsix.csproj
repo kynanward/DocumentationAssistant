@@ -71,8 +71,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Pluralize.NET, Version=0.1.84.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Pluralize.NET.0.1.84\lib\net46\Pluralize.NET.dll</HintPath>
+    <Reference Include="Pluralize.NET, Version=0.1.43.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Pluralize.NET.0.1.43\lib\net40\Pluralize.NET.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

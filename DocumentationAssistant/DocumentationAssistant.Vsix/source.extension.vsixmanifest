@@ -2,8 +2,9 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="DocumentationAssistant.cb663913-ed4f-43aa-90b4-d90128bb4dbc" Version="1.6.0" Language="en-US" Publisher="jinyafeng"/>
-        <DisplayName>DocumentationAssistant</DisplayName>
-        <Description xml:space="preserve">An Extension to generate XML documentation automatically using IntelliSense for interface,class,enum, field, constructor, property and method.</Description>
+        <DisplayName>DocumentationAssistant-wymac</DisplayName>
+        <Description xml:space="preserve">An Extension to generate XML documentation automatically using IntelliSense for interface,class,enum, field, constructor, property and method.
+Modified to use british spelling for initialise, by kynan ward.</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,)" />
@@ -18,7 +19,7 @@
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="DocumentationAssistant.Config" Path="|DocumentationAssistant.Config;PkgdefProjectOutputGroup|" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,17.0)" DisplayName="Visual Studio core editor" />
-        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0,17.0)" DisplayName="Roslyn Language Services" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.25819,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.25819,17.0)" DisplayName="Roslyn Language Services" />
     </Prerequisites>
 </PackageManifest>

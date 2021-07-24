@@ -1,3 +1,5 @@
+this version has been modified to more closely suit Wymac core game team style.
+
 todo :
 1. for methods starting with `void OnWordWord()` generate `/// Handles word word.`
 2. for methods with single words `void Word()` generate `/// Performs word.`

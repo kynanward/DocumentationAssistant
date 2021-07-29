@@ -1,4 +1,7 @@
-# Documentation Assistant
-A Visual Studio Extension to generate XML documentation automatically for c# code using IntelliSense for interface,class,enum, field, constructor, property and method.
+this version has been modified to more closely suit Wymac core game team style.
 
-**You can see here [VS marketplace](https://marketplace.visualstudio.com/items?itemName=jinyafeng.DocumentationAssistant) for more information.**
+# Documentation assistant
+A Visual Studio Extension to generate XML documentation automatically for c# code using IntelliSense for interface, class, enum, field, constructor, property and method.
+
+# original:
+https://github.com/jinyafeng/DocumentationAssistant

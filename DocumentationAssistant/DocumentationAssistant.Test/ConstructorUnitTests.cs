@@ -178,7 +178,7 @@ namespace ConsoleApp4
 			{
 				Id = ConstructorAnalyzer.DiagnosticId,
 				Message = ConstructorAnalyzer.MessageFormat,
-				Severity = DiagnosticSeverity.Warning,
+				Severity = DiagnosticSeverity.Info,
 				Locations =
 					new[] {
 							new DiagnosticResultLocation("Test0.cs", line, column)

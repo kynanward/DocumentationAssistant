@@ -103,7 +103,7 @@ namespace ConsoleApp4
 			{
 				Id = FieldAnalyzer.DiagnosticId,
 				Message = FieldAnalyzer.MessageFormat,
-				Severity = DiagnosticSeverity.Warning,
+				Severity = DiagnosticSeverity.Info,
 				Locations =
 					new[] {
 							new DiagnosticResultLocation("Test0.cs", line, column)

@@ -37,7 +37,7 @@ namespace DocumentationAssistant
         /// <summary>
         /// The diagnostic descriptor rule.
         /// </summary>
-        private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Warning, true);
+        private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Info, true);
 
         /// <summary>
         /// Gets the supported diagnostics.

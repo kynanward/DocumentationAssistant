@@ -71,7 +71,7 @@ namespace Test
 			{
 				Id = EnumAnalyzer.DiagnosticId,
 				Message = EnumAnalyzer.MessageFormat,
-				Severity = DiagnosticSeverity.Warning,
+				Severity = DiagnosticSeverity.Info,
 				Locations =
 					new[] {
 							new DiagnosticResultLocation("Test0.cs", line, column)

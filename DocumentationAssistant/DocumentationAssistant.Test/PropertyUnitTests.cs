@@ -307,7 +307,7 @@ namespace ConsoleApp4
 			{
 				Id = PropertyAnalyzer.DiagnosticId,
 				Message = PropertyAnalyzer.MessageFormat,
-				Severity = DiagnosticSeverity.Warning,
+				Severity = DiagnosticSeverity.Info,
 				Locations =
 					new[] {
 							new DiagnosticResultLocation("Test0.cs", line, column)
